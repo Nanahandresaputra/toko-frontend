@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .input-primary {
+    @apply outline-none border rounded border-gray-400 bg-gray-100 focus:border-blue-500 focus:bg-blue-200 p-3;
+  }
+  .input-error {
+    @apply outline-none border rounded border-gray-400 bg-gray-100 focus:border-red-500 focus:bg-red-200 p-3;
+  }
+
+  .input-file-primary {
+    @apply file:bg-black file:p-3 border rounded file:text-white border-gray-400 bg-gray-100 focus:border-blue-500 focus:bg-blue-200;
+  }
+  .input-file-error {
+    @apply file:bg-black file:p-3 border rounded file:text-white border-red-400 bg-gray-100 focus:border-red-500 focus:bg-red-200;
+  }
+}
